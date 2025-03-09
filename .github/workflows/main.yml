@@ -23,12 +23,10 @@ jobs:
     - name: Print working directory
       run: pwd
     - name: Run Linter
-  run: |
-    # Crea un file di configurazione JSHint che accetta ES6
-    echo '{ "esversion": 8 }' > .jshintrc
-    # Poi esegui il linting
-    find ./server/database -name "*.js" -exec jshint {} +
-    echo "Linted all the js files successfully"
+      run: |
+          echo '{ "esversion": 8 }' > .jshintrc
+          find ./server/database -name "*.js" -exec jshint {} +
+          echo "Linted all the js files successfully"
   lint_js:
       name: Lint JavaScript Files
       runs-on: ubuntu-latest
