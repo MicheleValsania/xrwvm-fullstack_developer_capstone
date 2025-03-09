@@ -82,7 +82,7 @@ return(
         <div className='review_panel'>
           <img src={senti_icon(review.sentiment)} className="emotion_icon" alt='Sentiment'/>
           <div className='review'>{review.review}</div>
-          <div className="reviewer">{review.name} {review.car_make} {review.car_model} {review.car_year}</div>
+          <div className="reviewer">{review.reviewer.full_name} {review.car_make} {review.car_model} {review.car_year}</div>>
         </div>
       ))}
     </div>  
