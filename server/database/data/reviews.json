@@ -549,6 +549,39 @@
       "car_make": "Cadillac",
       "car_model": "DeVille",
       "car_year": 1995
+    },
+    {
+      "id": 51,
+      "name": "ramparampa",
+      "dealership": 20,
+      "review": "I had a great experience at this dealership. The sales representative was knowledgeable and didn't pressure me into making a decision. The financing process was smooth and they offered competitive rates. The car was exactly as described and has been reliable since purchase. I would definitely recommend this dealership to friends and family looking for a new vehicle.",
+      "purchase": true,
+      "purchase_date": "2025-03-01",
+      "car_make": "Toyota",
+      "car_model": "Highlander",
+      "car_year": 2022
+    },
+    {
+      "id": 52,
+      "name": "ramparampa",
+      "dealership": 20,
+      "review": "I had a great experience at this dealership. The sales representative was knowledgeable and didn't pressure me into making a decision. The financing process was smooth and they offered competitive rates. The car was exactly as described and has been reliable since purchase. I would definitely recommend this dealership to friends and family looking for a new vehicle",
+      "purchase": true,
+      "purchase_date": "2025-03-11",
+      "car_make": "Kia",
+      "car_model": "Cadenza",
+      "car_year": 2020
+    },
+    {
+      "id": 53,
+      "name": "ramparampa",
+      "dealership": 1,
+      "review": "I had a great experience at this dealership. The sales representative was knowledgeable and didn't pressure me into making a decision. The financing process was smooth and they offered competitive rates. The car was exactly as described and has been reliable since purchase. I would definitely recommend this dealership to friends and family looking for a new vehicle",
+      "purchase": true,
+      "purchase_date": "2025-03-12",
+      "car_make": "Audi",
+      "car_model": "Q5",
+      "car_year": 2021
     }
   ]
 }

@@ -13,6 +13,7 @@ sentiment_analyzer_url = os.getenv(
 
 # def get_request(endpoint, **kwargs):
 # Add code for get requests to back end
+# In restapis.py, modify the get_request function
 def get_request(endpoint, **kwargs):
     params = ""
     if(kwargs):
@@ -27,12 +28,23 @@ def get_request(endpoint, **kwargs):
         response = requests.get(request_url, verify=False, timeout=10, headers={
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
         })
-        return response.json()
+        
+        # Print the response content for debugging
+        print("Response Status:", response.status_code)
+        print("Response Content:", response.text[:100])  # First 100 chars
+        
+        try:
+            return response.json()
+        except ValueError as e:
+            print("JSON Parsing Error:", str(e))
+            # Return an empty list if JSON parsing fails
+            return []
+            
     except Exception as e:
         # If any error occurs
         print(f"Network exception occurred: {str(e)}")
-        return None
-
+        return []
+       
 
 # def analyze_review_sentiments(text):
 # request_url = sentiment_analyzer_url+"analyze/"+text
