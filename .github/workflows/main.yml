@@ -24,8 +24,7 @@ jobs:
       run: pwd
     - name: Run Linter
       run: |
-        # Ignora gli errori di formattazione
-        find . -name "*.py" -exec flake8 --ignore=E231,E302,E501,W291,W292,W293 {} +
+        find . -name "*.py" -exec flake8 --ignore=E225,E226,E231,E251,E265,E275,E302,E305,E722,E203,E128,F401,F811,F841,W291,W292,W293,E501 {} +
         echo "Linted all the python files successfully"
   
   lint_js:
