@@ -12,6 +12,7 @@ from django.views.decorators.csrf import csrf_exempt
 from .models import CarMake, CarModel
 from .populate import initiate
 from .restapis import get_request, analyze_review_sentiments, post_review
+from django.views.decorators.csrf import csrf_exempt
 import logging
 import json
 import os
@@ -220,7 +221,7 @@ def get_dealer_details(request, dealer_id):
 # Create a `add_review` view to submit a review
 # def add_review(request):
 # ...
-from django.views.decorators.csrf import csrf_exempt
+
 
 @csrf_exempt
 def add_review(request):
